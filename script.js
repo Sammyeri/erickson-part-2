@@ -4,6 +4,7 @@ let putts=0
 
 if (numberholes == 3){
     let par =9;
+    console.log(`${name} is playing ${numberholes} holes with par of ${par}.`);
     for (let i=1; i<=3; i++){
         putts += parseInt(prompt(`How many putts for hole ${i}?`));
     }
@@ -16,9 +17,9 @@ if (numberholes == 3){
         over = putts - par;
         console.log(`Nice try, ${name}... Your total par was: +${over}.`);
     }
-    console.log(`${numberholes}, ${putts}`);
 } else if (numberholes == 6){
     let par =18;
+    console.log(`${name} is playing ${numberholes} holes with par of ${par}.`);
     for (let i=1; i<=6; i++){
         putts += parseInt(prompt(`How many putts for hole ${i}?`))
     }
@@ -31,7 +32,6 @@ if (numberholes == 3){
         over = putts - par;
         console.log(`Nice try, ${name}... Your total par was: +${over}.`);
     }
-    console.log(`${numberholes}, ${putts}`);
 } else {
     console.log(`Im sorry, we do not have ${numberholes} holes, please try again.`);
 }
